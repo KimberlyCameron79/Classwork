@@ -22,5 +22,54 @@ chewbaca.txt  han_solo.txt  luke.txt  millenium_falcon/  obi_wan.txt  tatooine/
 $ cp storm_trooper.txt tatooine
 
 
+Step 3
+$ mv luke.txt, obi_wan.txt millenium_falcon
+$ mv millenium_falcon galaxy-far-far-away
+$ mv millenium_falcon death_star
+$ mv princess_leia.txt millenium_falcon
+
+Step 4
+
+$ cd ~/OneDrive/Desktop/PerScholas/Classwork/galaxy-far-far-away/galaxy-far-far-away
+$ rm obi_wan.txt
+
+Step 5
+
+$ mv millenium_falcon ~/OneDrive/Desktop/PerScholas/Classwork/galaxy-far-far-away/galaxy-far-far-away/yavin_4
+$ mkdir x_wing
+$ mv luke.txt x_wing
+$ cd ~/OneDrive/Desktop/PerScholas/Classwork/galaxy-far-far-away/galaxy-far-far-away/yavin_4/x_wing
+$ ls
+luke.txt
+$ cd ~/OneDrive/Desktop/PerScholas/Classwork/galaxy-far-far-away
+$ mkdir millenium_falcon
+$ mkdir x_wing
+
+
+$ cd ~/OneDrive/Desktop/PerScholas/Classwork/galaxy-far-far-away/death_star
+
+$ mkdir tie_fighter_1, tie_fighter_2, tie_fighter_2
+
+$ mv darth_vadar.txt tie_fighter_1
+$ cp storm_trooper.txt tie_fighter_2
+$ cp storm_trooper.txt tie_fighter_3
+
+$ cd galaxy-far-far-away
+$ cd death_star
+
+$ mv tie_fighter_1/ ..
+
+$ ls
+$ rm -r tie_fighter_2 tie_fighter_3
+
+$ ls
+$ cd x_wing
+$ touch the_force.txt
+$ ls
+the_force.txt
+$ cd ..
+$ rm -r death_star
+$ mv x_wing/ yavin_4/
+$ mv millenium_falcon/ yavin_4/
 
 
