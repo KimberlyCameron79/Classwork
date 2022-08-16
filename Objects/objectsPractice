@@ -1,0 +1,48 @@
+let stations1 = randomStation1 
+let stations2 = randomStation2
+
+const radio = {
+    stations1:[
+    name:'107.3',
+    songs:[
+   
+    {
+        title:'El Segundo',
+        artist:'Tribe Called Quest',
+    {
+        title:'Four Leaf Clover',
+        artist:'Erykah Badu',
+        {
+        title:'Better Than I Imagined',
+        artist:'Robert Glasper',
+        {
+        }  
+        {
+    stations2:
+    name: '96.1'
+    songs: 
+        title:'Liar',
+        artist:'Henry Rollins',
+        {
+
+        title:'Bad Romance',
+        artist:'Halestorm',
+        {
+
+        title:'King Must Die'
+        artist:'Wicked Wisdom'{
+                    }
+        }
+        }  
+        }
+    }
+    function getRandomRadio(max){
+        return Math.floor(math.random()* max);
+    }
+} ]
+randomStation
+console.log(getRandomRadio(2));
+
+console.log(getRandomRadio(0);
+
+console.log(Math.random()));
