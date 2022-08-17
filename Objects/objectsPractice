@@ -1,48 +1,52 @@
-let stations1 = randomStation1 
-let stations2 = randomStation2
 
 const radio = {
-    stations1:[
-    name:'107.3',
-    songs:[
-   
-    {
-        title:'El Segundo',
-        artist:'Tribe Called Quest',
-    {
-        title:'Four Leaf Clover',
-        artist:'Erykah Badu',
+    stations:[
         {
-        title:'Better Than I Imagined',
-        artist:'Robert Glasper',
+        name:'107.3',
+        songs:[
         {
-        }  
+    
+            title:'El Segundo',
+            artist:'Tribe Called Quest',
+    },
+            title:'Four Leaf Clover',
+            artist:'Erykah Badu',
+
+            title:'Better Than I Imagined',
+            artist:'Robert Glasper',
+        },
+             {
+    stations:
+        name: '96.1'
+        songs: 
+            title:'Liar',
+            artist:'Henry Rollins',
         {
-    stations2:
-    name: '96.1'
-    songs: 
-        title:'Liar',
-        artist:'Henry Rollins',
+        },
+            title:'Bad Romance',
+            artist:'Halestorm',
         {
 
-        title:'Bad Romance',
-        artist:'Halestorm',
-        {
-
-        title:'King Must Die'
-        artist:'Wicked Wisdom'{
-                    }
+            title:'King Must Die',
+            artist:'Wicked Wisdom',{
+                        }
         }
         }  
         }
     }
-    function getRandomRadio(max){
+
+
+    getRandomRadio: functionL:(max)=>{
         return Math.floor(math.random()* max);
     }
-} ]
-randomStation
-console.log(getRandomRadio(2));
+]
+//change station function
 
-console.log(getRandomRadio(0);
+changeStation: function() {
+let getRandomRadio = Math.floor(Math.random() * radio.stations.length);
+let randomSong = Math.floor(Math.random() * radio.stations.[getRandomRadio.songs].songs.length;
 
-console.log(Math.random()));
+console.log("Now Playing: ") + radio.stations[getRandomRadio].songs[randomSong].title + " by " + radio.stations[getRandomRadio].songs[randomSong].artist + " on the "+ radio.stations[getRandomRadio].name + "station!");
+}
+
+radio.changeStation(); 
