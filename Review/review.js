@@ -72,5 +72,17 @@ if (age >= 16){
     console.log('Sorry, you\'re too young')
 }
 
-//LOOPS
+//LOOPS THE BASICS
+
+for(let i = 0; i <= 10; i++){
+    console.log(i)
+}
+
+for(let i = 10; i <= 400; i++){
+    console.log(i)
+}
+
+for(let i = 12; i <= 4000; i+=3){
+    console.log(i)
+}
 
