@@ -21,4 +21,12 @@ SECTION STRINGS
 
 1. Create a variable called firstVariable. const firstVariable;
 
-2.Assign the 
+2.Assign it the value of the string "Hello World". let firstVariable= 'Hello World!';
+
+3.Change the value of this variable to some number.
+
+4. Store the 
+
+5. 200
+
+

@@ -17,7 +17,19 @@ const myGrilledTrout = Protein;
 }
 */
 
-const firstVariable(); {
+let firstVariable = 'Hello World!'
 
-    let firstVariable= 'Hello World!'
-}
+firstVariable = 200;
+
+let secondVariable = firstVariable;
+
+secondVariable = 'Shopping'   
+    
+ //200
+
+ let yourName = 'Kimberly';
+
+ console.log(`Hello, my name is ${yourName}`)
+
+   
+
