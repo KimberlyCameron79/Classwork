@@ -92,4 +92,26 @@ for(let i = 1; i <= 100; i++){
     if (i % 2 === 0)
     console.log(i)
 }
+//C. GIVE ME FIVE
 
+for(let i =5; i <= 100; i+=5){
+    if(i*5)
+    console.log(`I found a ${[i]}. High five!`)
+}
+
+for(let i =3; i <= 100; i+=3){
+    if(i*3)
+    console.log(`I found a ${[i]}. Three is a crowd!`)
+}
+
+for(let i = 1; i <= 100; i++){
+    if(i % 5 === 0 && i % 3 === 0){
+    console.log(`I found a ${[i]}. High five! Three is a crowd~.`)
+} else if (i % 5 === 0 ){
+    console.log(`I found a ${[i]}. High five!`);
+} else if(i % 3 === 0){
+    console.log(`I found a ${[i]}. Three is a crowd.`);
+}
+}
+
+//SAVINGS ACCOUNT
