@@ -153,6 +153,16 @@ let quotes= ["To be or not to be", "If you can dream it, you can do it.", "Be cu
     console.log(randomThings[2]);
 //3.
     console.log(randomThings);
+
+//D. CHANGE VALUES
+//1.
+    const ourClass = ["Salty", "Zoom","Sardine", "Slack", "Github"]
+    console.log(ourClass[2]);
+
+    ourClass[4]="Octocat";
+    ourClass.push="Cloud City";
+
+    console.log(ourClass);
     
 
 
