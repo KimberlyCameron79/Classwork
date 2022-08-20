@@ -163,6 +163,21 @@ let quotes= ["To be or not to be", "If you can dream it, you can do it.", "Be cu
     ourClass.push="Cloud City";
 
     console.log(ourClass);
-    
+   
+//MIX IT UP
+    const myArray = [5, 10, 500, 20]
+//1.
+    myArray.push ="Aegon";
+    myArray.push ="Atlantis";
+//2.
+    myArray.shift();
+//3.
+    myArray.unshift("Bob Marley");
+//4.
+    myArray.pop();
+    console.log(myArray);
+//5.
+myArray.reverse();
+console.log(myArray);
 
 
