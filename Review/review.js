@@ -128,3 +128,31 @@ for (let i = 1; i <= 100; i++){
     mybankaccount += i*2;
 }
 console.log(mybankaccount);
+
+//ARRAYS & CONTROL FLOW
+// A. TALK ABOUT IT
+//1. What are the things in an array called? Ordered list of values which are also called elements.
+
+//2. Do Arrays guarantee those things will be in order?  No
+
+//3. What real-life thing could you model with an array? Grocery lists.
+
+//B. EASY DOES IT.
+
+let quotes= ["To be or not to be", "If you can dream it, you can do it.", "Be curious, not judgmental"];
+
+
+//C. ACCESSING ELEMENTS
+//1.
+    const randomThings = [1, 10, "Hello", true]
+
+    console.log(randomThings[0]);
+
+//2.
+    randomThings[2]="World";
+    console.log(randomThings[2]);
+//3.
+    console.log(randomThings);
+    
+
+
