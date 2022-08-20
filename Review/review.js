@@ -115,3 +115,16 @@ for(let i = 1; i <= 100; i++){
 }
 
 //SAVINGS ACCOUNT
+//1.
+let bankaccount = 0;
+for (let i = 1; i <= 10; i++){
+    bankaccount += i;
+}
+console.log(bankaccount);
+
+//2.
+let mybankaccount = 0;
+for (let i = 1; i <= 100; i++){
+    mybankaccount += i*2;
+}
+console.log(mybankaccount);
