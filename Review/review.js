@@ -176,8 +176,17 @@ let quotes= ["To be or not to be", "If you can dream it, you can do it.", "Be cu
 //4.
     myArray.pop();
     console.log(myArray);
-//5.
+//5. The array was mutated because the first array changed after utilizing the reverse method.
 myArray.reverse();
 console.log(myArray);
 
+//BIGGIE SMALLS
 
+let x = 8;
+if(x < 5){
+    console.log('little number')
+} if(x > 10){
+    console.log('big number')
+}else{
+    console.log('monkey')
+}
