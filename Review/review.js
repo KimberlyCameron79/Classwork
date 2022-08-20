@@ -182,10 +182,21 @@ console.log(myArray);
 
 //BIGGIE SMALLS
 
-let x = 8;
-if(x < 5){
+let x = 0;
+if(x < 100){
     console.log('little number')
-} if(x > 10){
+} else{
+    console.log('big number')
+}
+   
+
+
+//MONKEY IN THE MIDDLE
+
+let y = 9;
+if(y < 5){
+    console.log('little number')
+} else if(y > 10){
     console.log('big number')
 }else{
     console.log('monkey')
