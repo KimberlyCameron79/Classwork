@@ -16,7 +16,7 @@ const myGrilledTrout = Protein;
 
 }
 */
-
+/*
 let firstVariable = 'Hello World!'
 
 firstVariable = 200;
@@ -201,7 +201,8 @@ if(y < 5){
 }else{
     console.log('monkey')
 }
-
+*/
+/*
 //WHAT'S IN YOUR CLOSET
 
     const kristynsCloset = [
@@ -254,3 +255,27 @@ if(y < 5){
 
            //Get more specific about about kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
            thomsCloset[1][2] = "Footie Pajamas";
+           */
+
+           //FUNCTIONS
+           //A
+
+           //console.log(printGreeting("Slimer"));
+
+           let printGreeting = function(name){
+                console.log(`Hello there, ${name}!`)
+           }
+
+           printGreeting("Slimer");
+
+           //B  printCool
+
+           //console.log(printCool("Captain Reynolds"));
+
+           let printCool = function(name){
+            console.log(` ${name}! is cool`);
+       }
+        printCool("Captain Reynolds");
+
+
+
