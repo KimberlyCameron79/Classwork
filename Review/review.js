@@ -301,6 +301,19 @@ if(y < 5){
         }
         console.log(getTwoLengths("lasanga", "macaroni"));
 
+//F getMultipleLengths
+
+        let multipleLengths = function (array){
+
+            let result=[];
+            for(i=0; i < array.length; i++){
+                result.push (array[i].length);
+            }
+        }
+        return result;
+
+       console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); 
+
 
 
 
