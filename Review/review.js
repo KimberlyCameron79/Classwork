@@ -201,3 +201,56 @@ if(y < 5){
 }else{
     console.log('monkey')
 }
+
+//WHAT'S IN YOUR CLOSET
+
+    const kristynsCloset = [
+        "left shoe",
+        "cowboy boots",
+        "right sock",
+        "GA hoodie",
+        "green pants",
+        "yellow knit hat",
+        "marshmallow peeps"
+    ];
+
+    const thomsCloset =[
+        "grey button-up",         //Thoms shirts
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ],[
+           // These are Thom's pants
+        "dark grey jeans",
+        "jeans",
+        "PJs"
+    ],[
+          // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+        // ];
+    //What's Kristyn wearing today?
+
+        console.log("Kristyn is rocking that" + kristynsCloset[2] + " today !")
+
+// Kristyn just bought some new shades!
+        kristynsCloset[6]= "raybans"
+
+//Kristyn spilled coffee on her hat ... modify this item to read " stained knit hat" instead of yellow. 
+        kristynsCloset[5] = "stained knit hat"
+//Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
+           thomsCloset[0][0];
+
+           //In the same way, access one item from Thom's pants array.
+           thomsCloset[1][1];
+
+           //Access one item from Thom's accessories array.
+           thomsCloset[2][2];
+
+           //Log a sentence about what Thom's wearing. 
+           console.log(`Thom is looking dapper in a ${thomsCloset[0][0]}, ${thomsCloset[[1][1]]}, and $[thomsCloset[2][2]]!`);
+
+           //Get more specific about about kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+           thomsCloset[1][2] = "Footie Pajamas";
