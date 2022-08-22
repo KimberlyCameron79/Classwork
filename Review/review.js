@@ -357,6 +357,11 @@ let maxOfThree = function(numOne, numTwo, numThree) {
         purchased: []
     }
 
+    // B. Update the user
+
+    user.email = "jcustomer@gmail.com";
+    user.age++;
+    
 
 
 
