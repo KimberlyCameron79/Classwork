@@ -276,6 +276,14 @@ if(y < 5){
             console.log(` ${name}! is cool`);
        }
         printCool("Captain Reynolds");
+        
+        //C calculateCube
+
+        let calculateCube = function(num){
+            console.log(num * num * num);
+        }
+
+        calculateCube(5);
 
 
 
