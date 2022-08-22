@@ -285,5 +285,18 @@ if(y < 5){
 
         calculateCube(5);
 
+        //D isVowel
+
+        let isVowel = function(char){
+            if(char.toLowerCase() == "a" || char.toLowerCase == "e" || char.toLowerCase == "i" || char.toLowerCase == "o" || char.toLowerCase == "u"){
+                return true;
+            }
+                return false
+        }
+        console.log(isVowel("U"));
+        
+
+
+
 
 
