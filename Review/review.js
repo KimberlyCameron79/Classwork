@@ -361,7 +361,14 @@ let maxOfThree = function(numOne, numTwo, numThree) {
 
     user.email = "jcustomer@gmail.com";
     user.age++;
-    
+
+// C. Adding keys and values
+//You have decided to add your user's location to the date that you want to collect. 
+//Without changing the original user object, add a new key location to the object,
+//and give it a vlaue or some-or-other location ( a string).
+
+user.location ="Garfield";
+
 
 
 
