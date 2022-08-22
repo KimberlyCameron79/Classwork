@@ -346,7 +346,16 @@ let maxOfThree = function(numOne, numTwo, numThree) {
         return longestWord;
     }
     console.log(printLongestWord(["BoJack", "Princess", "Diane","a", "Max", "Peanutbutter", "big"]));
-    
+
+    //OBJECTS
+    // A Make a user object
+
+    let user = {
+        name: "Customer Name",
+        email:"customer@gmail.com",
+        age: 0,
+        purchased: []
+    }
 
 
 
