@@ -332,6 +332,20 @@ let maxOfThree = function(numOne, numTwo, numThree) {
     console.log(maxOfThree(6, 9, 1));
     console.log(maxOfThree(8, 5, 9));
     console.log(maxOfThree(3, 9, 4));
+
+
+    //H printLongestWord
+
+    let printLongestWord = function(arrayOfStrings){
+        let longestWord = arrayOfStrings[0];
+        for(let i=0; i < arrayOfStrings.length; i++){
+            if(arrayOfStrings[i].length > longestWord.length){
+                longestWord = arrayOfStrings[i];
+            }
+        }
+        return longestWord;
+    }
+    console.log(printLongestWord(["BoJack", "Princess", "Diane","a", "Max", "Peanutbutter", "big"]));
     
 
 
