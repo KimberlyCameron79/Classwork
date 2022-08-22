@@ -300,7 +300,7 @@ if(y < 5){
             return [strOne.length, strTwo.length];
         }
         console.log(getTwoLengths("lasanga", "macaroni"));
-
+/*
 //F getMultipleLengths
 
         let multipleLengths = function (array){
@@ -313,6 +313,26 @@ if(y < 5){
         return result;
 
        console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"])); 
+*/
+
+//G maxOfThree
+
+let maxOfThree = function(numOne, numTwo, numThree) {
+
+    let max = 0;
+    if (numOne >= numTwo && numOne >= numThree){
+        max = numOne;
+    }else if (numTwo >= numOne && numTwo >= numThree){
+        max = numTwo
+    }else if (numThree >= numOne && numThree >= numTwo){
+        max = numThree;
+    }
+        return max;
+}
+    console.log(maxOfThree(6, 9, 1));
+    console.log(maxOfThree(8, 5, 9));
+    console.log(maxOfThree(3, 9, 4));
+    
 
 
 
