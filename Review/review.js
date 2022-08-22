@@ -294,7 +294,13 @@ if(y < 5){
                 return false
         }
         console.log(isVowel("U"));
-        
+
+        let getTwoLengths = function(strOne, strTwo){
+
+            return [strOne.length, strTwo.length];
+        }
+        console.log(getTwoLengths("lasanga", "macaroni"));
+
 
 
 
