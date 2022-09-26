@@ -53,60 +53,56 @@
 
 //EXERCISE 1
 
-class Crystals{
-
-    constructor(colorParam, typeParam, purposeParam){
-        this.color = colorParam;
-        this.type = typeParam;
-        this.purpose = purposeParam;
-        this.healing = true;
-
-    console.log('Displaying good crystals!')
-}
-
-goIlluminate(){
-    console.log('illuminate!')
-}
-start() {
-    this.healing = true;
-    console.log('healing')
-}
-
-toString(){
-    return 'Crystals' (' + this.color +') a '+ this.type + 'purpose' + this.purpose;
-}
-
-const Obsidian= new Crystals('black','healing','protection')                        
-const Jade = new Crystals('green', 'healing,'compassion')
-const Citrine = new Crystals('yellow', 'healing,'prosperity')
-
-obsidian.goIlluminate()
-citrine.goIlluminate()
-
-console.log(Obsidian, Jade, Citrine)
-
-const prosperityCrystals = [Citrine, Pyrite, Amethyst ]
-const healthCrystals = [Moonstone, RoseQuartz,Selenite ]
-
-console.log(prosperityCrystals, healthCrystals)
-
-toString(){
-    return 'prosperityCrystals' + 'healthCrystals';
-
 class Cat{
 
-    constructor(breed, appetite, legs)
+    constructor(nameParam, breedParam, legsParam){
+        this.name = nameParam;
+        this.breed = breedParam;
+        this.legs = legsParam;
+        this.fiesty = true;
+
+    console.log('Cats were once guardians of the pyramids.')
 }
+
+meow(){
+    console.log('meow!')
+}
+start() {
+    this.fiesty = true;
+    console.log('fiesty')
+}
+
+toString(){
+    return this.name  + 'is a '+ this.breed + 'with' + this.legs;
+}
+
+const fanCat=['Persian', 'Siamese', Bengal];
+
+
+console.log(Perian.toString())
+
+
 
     //EXERCISE
 
     class Pirate{
-        constructor(shipParam, treasureParam, weaponParam)
-            this.ship
-            this.treasure
-            this.weapons
+        constructor(nameParam, treasureParam, ageParam)
+            this.name;
+            this.treasure;
+            this.age;
     }
+    shout(){
+        console.log('Ahoy!');  
+  }
+    empty(){
+        console.log('Empty your bags!')
+    }
+  toString(){
+    return 'My name is' + this.name + 'and I am ' + this.age + 'years old and I'm taking the' + this.treasure;
+  }
 
+  const jollyRoger = [new Pirate('Viking','Gold', 24), new Pirate('Buccaneer','Diamond', 28), new Pirate('Corsairs', 'Silver', 32)];
+  const blackPearl = [new Pirate('Filibusters'Emeralds', 48), new Pirate('Privateers','Rubies', 37), new Pirate('Blackbirds', 'Iron', 43)];
     //EXERCISE 3
     
     class Car {
@@ -118,5 +114,5 @@ class Cat{
     const freighter = []
         for(let i=0; i < 100; i++){
             freighter.push(new Car(i));
-            
+
         }

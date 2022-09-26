@@ -2,7 +2,7 @@
   "name": "routeslab",
   "version": "1.0.0",
   "description": "",
-  "main": "fruits.js",
+  "main": "server.js",
   "scripts": {
     "start": "node ./bin/www",
     "start:dev": "DEBUG=nodejs-mysql:* nodemon ./bin/www"
@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "express-react-views": "^0.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

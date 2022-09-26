@@ -3,7 +3,7 @@ const express = require('express')
 
 // // creates our express app (object)
 const app = express()
-const fruitRoutes = require('./routes/fruits')
+const fruitRoutes = require('./routes/fruitRoutes')
 // //Identify our port
 const port = 5000
 //setup ouir view engine

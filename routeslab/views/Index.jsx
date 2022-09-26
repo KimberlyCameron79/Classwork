@@ -37,7 +37,8 @@ class Index extends React.Component {
                     {fruits.map((fruit, i) => {
                         return (
                             <li key={i}>
-                            tHE <a href={`fruits/${i}> {fruit.name}`}
+                             <a href={`/fruits/${i}`}>
+                            </a>
                                 
                             </li>
                         )

@@ -2,26 +2,24 @@
 const express = require('express')
 
 //load our fruits data
-// const fruits = require('../routes')
+const fruits = require('../models/fruits')
 
 
 // Creates our express router (object)
-const router = express()
+const router = express.Router()
 
-// Identify our port
-const port =5000
 
-//Middleware
-router.use('/',fruitRoutes)
 
-// Setup "root" routes
-router.get('/', (req, res) => {
-    res.send('<h1>Hello World!</h1>')
-})
+
+
+// // Setup "root" routes
+// router.get('/', (req, res) => {
+//     res.send('<h1>Hello World!</h1>')
+// })
 
 // Setup "index" route
 router.get('/', (req, res) => {
-    res.send(fruits)
+    // res.send(fruits)
     res.render('Index', {fruits: fruits})
 })
 
@@ -44,8 +42,8 @@ router.post('/', (req, res) => {
 
 // Setup "show" route  
 router.get('/:index', (req, res) => {
-    res.send(fruits[req.params.index])
-    res.render('Show', {fruit: fruits[req.params.index]}
+    // res.send(fruits[req.params.index])
+    res.render('Show', {fruit: fruits[req.params.index]})
 });
 
 // Setup "edit" route
@@ -65,14 +63,15 @@ router.delete('/:index', (req, res) => {
 
 
 // Listen to port
-router.listen(port, () => {
-    console.log('Listening on port: ', port)
-})
+// router.listen(port, () => {
+//     console.log('Listening on port: ', port)
+// })
 
 
 
 
 
 //create a special router object for our routes
-const router = express.Router()
+// const router = express.Router()
+module.exports = router;
 

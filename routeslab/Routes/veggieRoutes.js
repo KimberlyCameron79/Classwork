@@ -5,7 +5,7 @@ const express = require('express')
 const router = express.Router()
 
 // Load our veggies data
-const veggies = require('../routes/vegetables')
+const veggies = require('./vegetables')
 
 // Setup "index" route
 router.get('/', (req, res) => {  

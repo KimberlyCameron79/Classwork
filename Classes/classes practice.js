@@ -8,7 +8,7 @@ class Vehicle{ //Define the class' preo
         this.model= modelParam;
         this.jogging= false;    
                                     //constructor method is the method(key word)
-        console.log('creating a new instance of Vehicle')
+        console.log('Cats were once guardians of pyramids.')
     } 
 
     goVroom(){
@@ -67,7 +67,7 @@ class Crystals{
 goAhoy(){
     console.log('ahoy!')
 }
-start() {
+start() { 
     this.healing = true;
     console.log('healing')
 }

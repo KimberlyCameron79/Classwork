@@ -428,3 +428,5 @@ let oldAndLoud = function(person){
 oldAndLoud(user.friend);
 console.log(user.friend.name);
 console.log(user.friend.age);
+
+//CAT COMBINATOR

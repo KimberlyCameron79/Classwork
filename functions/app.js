@@ -48,3 +48,4 @@ function planetHasWater(planet) {
 console.log(planetHasWater('Mars'))
 console.log(planetHasWater('Jupiter'))
 */
+
