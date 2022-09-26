@@ -13,7 +13,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 //Middleware
 app.use(express.urlencoded({extended:false}))
 
-app.use('/', fruitRoutes)
+app.use('/fruits', fruitRoutes)
 
 // ?name=kiwi&color=green&readToEat=vlaue
 //Listen to port
