@@ -6,7 +6,7 @@ class Show extends React.Component {
 
     render() {
         
-        const { name, color, readyToEat } = this.props.veggies
+        const { name, color } = this.props.veggie
 
         return (
             <DefaultLayout title={`${name} details`} foodGroup="veggies">
@@ -14,9 +14,7 @@ class Show extends React.Component {
                 <p>
                     The {name} is {color}.
                 </p>
-                <p>
-                    {readyToEat ? "It is ready to eat!" : "It is NOT readt to eat... :("}
-                </p>
+                
                 <nav>
                     <a href="/veggies">Back</a>
                 </nav>

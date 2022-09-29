@@ -1,4 +1,6 @@
 const Veggie = require('../models/veggie')
+const seed = require('../models/seed')
+// Bring in seed data
 
 
 // ROUTE     GET /veggies    (index)
@@ -23,11 +25,7 @@ const showNewView = (req, res) => {
 
 // ROUTE     POST /veggies     (create)
 const createNewVeggie = (req, res) => {
-    if (req.body.readyToEat === "on") {
-        req.body.readyToEat = true
-    } else {
-        req.body.readyToEat = false
-    }
+   
     // Create has two arguments:
     //   1st: the data we want to send
     //   2nd: callback function 
@@ -64,7 +62,7 @@ const seedStarterData = (req, res) => {
 }
 
 // ROUTE     GET /veggies/:id     (show)
-const showOneVeggies = (req, res) => {
+const showOneVeggie = (req, res) => {
     // findById accepts two arguments:
     //   1st: the id of the document in our database
     //   2nd: callback (with error object and found document)
@@ -72,7 +70,7 @@ const showOneVeggies = (req, res) => {
         if (err) {
             res.status(400).json(err)
         } else {
-            res.status(200).render('veggies/Show', { veggie: foundVeggies })
+            res.status(200).render('veggies/Show', { veggie: foundVeggie })
         }
     })
 }
@@ -92,11 +90,6 @@ const showEditView = (req, res) => {
 // ROUTE     PUT /veggies/:id       (update)
 const updateOneVeggie = (req, res) => {
 
-    if (req.body.readyToEat === "on") {
-        req.body.readyToEat = true
-    } else {
-        req.body.readyToEat = false
-    }
 
     // findByIdAndUpdate takes 4 arguments:
     //    1st: the id 
@@ -126,6 +119,26 @@ const deleteOneVeggie = (req, res) => {
         }
     })
 }
+const clearData = (req, res) => {
+    // Delete all remaining documents (if there are any)
+    Veggie.deleteMany({}, (err, deletedVeggies) => {
+        if (err) {
+            res.status(400).json(err)
+        } else {
+            // console.log('deleted data.')
+            // console.log(seed.veggies)
+            // // Data has been successfully deleted
+            // // Now use seed data to repopulate the database
+            // Veggie.create(seed.veggies, (err, createdVeggie) => {
+            //     if (err) {
+            //         res.status(400).json(err)
+            //     } else {
+                    res.status(200).redirect('/veggies')
+                }
+            })
+        }
+
+
 
 module.exports = {
     findAllVeggies,
@@ -135,5 +148,6 @@ module.exports = {
     showOneVeggie,
     showEditView,
     updateOneVeggie,
-    deleteOneVeggie
+    deleteOneVeggie,
+    clearData
 }

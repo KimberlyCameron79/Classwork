@@ -1,4 +1,7 @@
-const Meat = require('../models/meats')
+const Meat = require('../models/meat')
+const seed = require('../models/seed')
+// Bring in seed data
+
 
 // ROUTE     GET /meats    (index)
 const findAllMeats = (req, res) => {  
@@ -22,11 +25,7 @@ const showNewView = (req, res) => {
 
 // ROUTE     POST /meats     (create)
 const createNewMeat = (req, res) => {
-    if (req.body.readyToEat === "on") {
-        req.body.readyToEat = true
-    } else {
-        req.body.readyToEat = false
-    }
+   
     // Create has two arguments:
     //   1st: the data we want to send
     //   2nd: callback function 
@@ -91,12 +90,6 @@ const showEditView = (req, res) => {
 // ROUTE     PUT /meats/:id       (update)
 const updateOneMeat = (req, res) => {
 
-    if (req.body.readyToEat === "on") {
-        req.body.readyToEat = true
-    } else {
-        req.body.readyToEat = false
-    }
-
     // findByIdAndUpdate takes 4 arguments:
     //    1st: the id 
     //    2nd: new data we want to use to update the old document
@@ -126,6 +119,27 @@ const deleteOneMeat = (req, res) => {
     })
 }
 
+const clearData = (req, res) => {
+    // Delete all remaining documents (if there are any)
+    Meat.deleteMany({}, (err, deletedMeats) => {
+        if (err) {
+            res.status(400).json(err)
+        } else {
+            // console.log('deleted data.')
+            // console.log(seed.meats)
+            // Data has been successfully deleted
+            // Now use seed data to repopulate the database
+            // Meat.create(seed.meats, (err, createdMeat) => {
+            //     if (err) {
+            //         res.status(400).json(err)
+            //     } else {
+                    res.status(200).redirect('/meats')
+                }
+            })
+        }
+    
+
+
 module.exports = {
     findAllMeats,
     showNewView, 
@@ -134,5 +148,6 @@ module.exports = {
     showOneMeat,
     showEditView,
     updateOneMeat,
-    deleteOneMeat
+    deleteOneMeat,
+    clearData
 }

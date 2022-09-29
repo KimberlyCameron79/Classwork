@@ -8,13 +8,13 @@ class Show extends React.Component {
         console.log(this.props)
 
         //Object destructuring
-        const {name, color, readyToEat} = this.props.meat
+        const {name, type, readyToEat} = this.props.meat
 
         return (
             <div>
             <h1>Show Page testing</h1>
             <p>
-                The {name} is {color}.
+                The {name} is {type}.
             </p>
             <p>
                 {readyToEat ? "It is ready to eat!" : "It is NOT ready to eat"}

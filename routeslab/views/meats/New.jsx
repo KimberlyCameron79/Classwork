@@ -5,13 +5,13 @@ class New extends React.Component {
         return (
             <div>
                 <h1>New Page</h1>
-                <form action="/fruits" method="POST">
+                <form action="/meats" method="POST">
 
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" />
 
-                    <label htmlFor="color">Color:</label>
-                    <input type="text" id="color" name="color" />
+                    <label htmlFor="type">Type:</label>
+                    <input type="text" id="type" name="type" />
 
                     <label htmlFor="readyToEat">Is Ready To Eat:</label>
                     <input type="checkbox" id="readyToEat" name="readyToEat" />

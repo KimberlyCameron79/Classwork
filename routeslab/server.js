@@ -26,6 +26,8 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.urlencoded({extended:false}))
 app.use(express.static("public"))
 app.use(methodOverride("_method"))
+app.use(express.json())
+
 
 app.use('/fruits', fruitRoutes)
 app.use('/meats', meatRoutes)

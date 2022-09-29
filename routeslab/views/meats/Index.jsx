@@ -15,7 +15,7 @@ class Index extends React.Component {
                         {meats.map((meat) => {
                             return (
                                 <li key={meat._id}>
-                                    The <a href={`/meats/${meat._id}`}>{meat.name}</a> is {meat.color}.
+                                    The <a href={`/meats/${meat._id}`}>{meat.name}</a> is {meat.type}.
                                 </li>
                             )
                         })}

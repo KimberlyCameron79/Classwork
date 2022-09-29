@@ -1,4 +1,6 @@
 const Fruit = require('../models/fruit')
+const seed = require('../models/seed')
+// Bring in seed data
 
 // ROUTE     GET /fruits    (index)
 const findAllFruits = (req, res) => {  
@@ -125,6 +127,26 @@ const deleteOneFruit = (req, res) => {
         }
     })
 }
+const clearData = (req, res) => {
+    // Delete all remaining documents (if there are any)
+    Fruit.deleteMany({}, (err, deletedFruits) => {
+        if (err) {
+            res.status(400).json(err)
+        } else {
+            // console.log('deleted data.')
+            // console.log(seed.fruits)
+            // Data has been successfully deleted
+            // // Now use seed data to repopulate the database
+            // Fruit.create(seed.fruits, (err, createdFruit) => {
+            //     if (err) {
+            //         res.status(400).json(err)
+            //     } else {
+                    res.status(200).redirect('/fruits')
+                }
+            })
+        }
+
+
 
 module.exports = {
     findAllFruits,
@@ -134,5 +156,6 @@ module.exports = {
     showOneFruit,
     showEditView,
     updateOneFruit,
-    deleteOneFruit
+    deleteOneFruit,
+    clearData
 }
