@@ -1,3 +1,4 @@
+// Starter data to refresh the documents in our database
 const fruits = [
     {
         name:'apple',
@@ -15,16 +16,23 @@ const fruits = [
         readyToEat: true
     },
     {
-        name: 'lemon',
-        color: 'yellow',
+        name: 'kiwi',
+        color: 'green',
         readyToEat: false
     },
     {
-        name: 'lime',
-        color: 'green',
-        readyToEat: false
+        name: 'papaya',
+        color: 'orange',
+        readyToEat: true
     }
 ];
 
+const meats = []
 
-module.exports = fruits
+const vegetables = []
+
+module.exports = {
+    fruits,
+    meats,
+    vegetables
+}

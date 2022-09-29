@@ -1,0 +1,13 @@
+body {
+    background-color: salmon;
+}
+
+#fruits-index {
+    font-size: 30px;
+    color: purple;
+
+}
+#fruits-show{
+    font-size: 25px;
+    color:aqua;
+}

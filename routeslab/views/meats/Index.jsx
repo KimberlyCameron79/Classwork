@@ -1,50 +1,30 @@
 const React = require('react')
+const DefaultLayout = require('../layouts/DefaultLayout')
+
 
 class Index extends React.Component {
 
     render() {
 
-        // Object Destructuring
         const { meats } = this.props
 
-        // const meats = this.props.meats
-
-        // map method
-        /*
-            - loops over data
-            - manipulates data at each index
-            - returns new array with new data
-        */
-
-        /*
-            [
-                { name: 'chicken' ... },
-                { name: 'fish' ... },
-                { name: 'turkey' ...}
-            ]
-        */ 
-            // After we map over it
-
-        /*
-            [element, element, element]
-        */
-
         return (
-            <div>
-            
-                <h1>Meats Index Page</h1>
-                <ul>
-                    {meats.map((meats, i) => {
-                        return (
-                            <li key={i}>
-                             <a href={`/meats/${i}`}>
-                            </a>
-                                
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
+            <DefaultLayout title="All Meat" meatGroup="meats">
+                    <h1>Meats Index Page</h1>
+                    <ul id="meats-index">
+                        {meats.map((meat) => {
+                            return (
+                                <li key={meat._id}>
+                                    The <a href={`/meats/${meat._id}`}>{meat.name}</a> is {meat.color}.
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                    <nav>
+                        <a href="/meats/new">Create a new a meat</a>
+                    </nav>
+            </DefaultLayout>
         )
     }
 }

@@ -1,3 +1,5 @@
+const Veggie = require("./veggie");
+
 const vegetables = [
     {
         name: 'broccoli',
@@ -13,4 +15,4 @@ const vegetables = [
     }
 ];
 
-module.exports = vegetable
+module.exports = veggie

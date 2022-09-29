@@ -1,34 +1,56 @@
-const React = require('react')
+const React = require('react');
+const DefaultLayout = require('../layouts/DefaultLayout');
 
-//extends is inheriting from parent class
-//class component
+// class component
 class Show extends React.Component {
-    
-    render() {
-        console.log(this.props)
 
-        //Object destructuring
-        const {name, color, readyToEat} = this.props.fruit
+    render() {
+        
+        const { fruit } = this.props
 
         return (
-            <div>
-            <h1>Show Page testing</h1>
-            <p>
-                The {name} is {color}.
-            </p>
-            <p>
-                {readyToEat ? "It is ready to eat!" : "It is NOT ready to eat"}
-            </p>
-            <nav>
-                <a href="fruits/"></a>
-            </nav>
+            <DefaultLayout title={`${fruit.name} details`} foodGroup="fruits">
+                <h1>Show Page</h1>
+                <p>
+                    The {fruit.name} is {fruit.color}.
+                </p>
+                <p>
+                    {fruit.readyToEat ? "It is ready to eat!" : "It is NOT ready to eat... :("}
+                </p>
 
+                <button>
+                    <a href={`/fruits/${fruit._id}/edit`}>Edit</a>
+                </button>
 
-            </div>
-            
+                <form action={`/fruits/${fruit._id}?_method=DELETE`} method="POST">
+                    <input type="submit" value="Delete" />
+                </form>
+
+                <nav>
+                    <a href="/fruits">Back</a>
+                </nav>
+            </DefaultLayout>
         )
     }
-
 }
 
 module.exports = Show;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

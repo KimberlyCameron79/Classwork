@@ -2,7 +2,7 @@
 const express = require('express')
 
 //load our veggies data
-const veggies = require('../models/vegetables')
+const veggies = require('../models/veggie')
 
 
 // Creates our express router (object)
